@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:card="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/background_gradient"
+                tools:context="com.lala.move.farhan.challenge.activities.DeliveryDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/mapRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cardLayout"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardLayout"
+        android:transitionName="@string/cardViewtransition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card:cardBackgroundColor="@color/card"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="5dp"
+        card:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deliveryIdTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/avatar_border"
+                        android:layout_width="@dimen/item_avatar_size"
+                        android:layout_height="@dimen/item_avatar_size"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/avatar_border">
+
+                        <ImageView
+                            android:id="@+id/deliveryImageIV"
+                            android:transitionName="@string/personImageViewtransition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/item_avatar_border"
+                            android:scaleType="centerCrop"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/deliveryDescriptionTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:transitionName="@string/textViewTransition"
+                        android:textColor="@color/whiteTextColor"
+                        android:textSize="@dimen/item_name_text_size"
+                        android:textStyle="bold"
+                        tools:text="Delivery Description"/>
+
+                    <TextView
+                        android:id="@+id/addressTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:transitionName="@string/addressTextViewTransition"
+                        android:textColor="@color/placeholder_bg"
+                        android:textSize="@dimen/item_info_text_size"
+                        android:textStyle="normal"
+                        tools:text="Delivery Address"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:alpha="0.5"
+                android:src="@color/whiteTextColor"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
