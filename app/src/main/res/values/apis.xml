@@ -1,0 +1,4 @@
+<resources>
+
+    <string name="google_android_api_key" templateMergeStrategy="preserve" translatable="false">Paste Here Google Map API KEY</string>
+</resources>

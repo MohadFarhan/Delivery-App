@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "896883319708",
+    "firebase_url": "https://lmove-83f38.firebaseio.com",
+    "project_id": "lmove-83f38",
+    "storage_bucket": "lmove-83f38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896883319708:android:0b81255f748ae684",
+        "android_client_info": {
+          "package_name": "com.lala.move.farhan.challenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896883319708-bjnk11aie8akpv8o9dj6amh07n1k36sh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lala.move.farhan.challenge",
+            "certificate_hash": "d62f68fc615889eef701a2864b8f8b1c08d4a535"
+          }
+        },
+        {
+          "client_id": "896883319708-tburc171kpfjd4vjagokvcpm0tgiubi7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9__pv_ZMMAsz-6F50J9yWD6f95TFKp6c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896883319708-tburc171kpfjd4vjagokvcpm0tgiubi7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

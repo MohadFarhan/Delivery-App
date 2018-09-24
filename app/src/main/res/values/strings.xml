@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lala Move Challenge</string>
+    <string name="personImageViewtransition">personImageViewtransition</string>
+    <string name="cardViewtransition">cardViewtransition</string>
+    <string name="textViewTransition">descriptionTextViewTransition</string>
+    <string name="addressTextViewTransition">addressTextViewTransition</string>
+</resources>

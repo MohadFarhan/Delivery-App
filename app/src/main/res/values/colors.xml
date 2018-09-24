@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/toolbarDark</color>
+    <color name="colorPrimaryDark">@color/toolbarDark</color>
+    <color name="colorAccent">#e70d49</color>
+
+    <color name="toolbarDark">#313b47</color>
+    <color name="backgroundStart">#3f4953</color>
+    <color name="backgroundEnd">#1e1e28</color>
+    <color name="card">#4f5660</color>
+    <color name="whiteTextColor">#ffffff</color>
+    <color name="placeholder_bg">#dddddd</color>
+</resources>

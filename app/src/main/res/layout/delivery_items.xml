@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardLayout"
+        card:cardBackgroundColor="@color/card"
+        card:cardCornerRadius="5dp"
+        android:transitionName="@string/cardViewtransition"
+        card:cardElevation="5dp"
+        card:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/deliveryIdTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/avatar_border"
+                        android:layout_width="@dimen/item_avatar_size"
+                        android:layout_height="@dimen/item_avatar_size"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/avatar_border">
+
+                        <ImageView
+                            android:id="@+id/deliveryImageIV"
+                            android:transitionName="@string/personImageViewtransition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/item_avatar_border"
+                            android:scaleType="centerCrop"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/deliveryDescriptionTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:transitionName="@string/textViewTransition"
+                        android:textColor="@color/whiteTextColor"
+                        android:textSize="@dimen/item_name_text_size"
+                        android:textStyle="bold"
+                        tools:text="Delivery Description"/>
+
+                    <TextView
+                        android:id="@+id/addressTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:transitionName="@string/addressTextViewTransition"
+                        android:textColor="@color/placeholder_bg"
+                        android:textSize="@dimen/item_info_text_size"
+                        android:textStyle="normal"
+                        tools:text="Delivery Address"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:alpha="0.5"
+                android:src="@color/whiteTextColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/app_fonts"
+                android:text="Start Delivery"
+                android:textAllCaps="true"
+                android:textColor="@color/placeholder_bg"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
